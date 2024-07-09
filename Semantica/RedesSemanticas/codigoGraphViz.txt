@@ -1,0 +1,27 @@
+digraph G {
+    
+
+Ciudad -> Asentamiento [label="subc_de"]
+CiudadAustraliana-> Ciudad  [label="subc_de"]
+Ciudad -> alta [label="densidadPoblacion"]
+CiudadAustraliana  -> costa [label="tiene"]
+sidney  -> CiudadAustraliana [label="inst_de"]
+perth  -> CiudadAustraliana [label="inst_de"]
+canberra  -> CiudadAustraliana [label="inst_de"]
+canberra  -> australia [label="capitalDe"]
+sidney  -> 5297089 [label="poblacion"]
+perth  -> 2192229 [label="poblacion"]
+sidney  -> _ [label=""]
+canberra  -> _ [label=""]
+_  -> 246.91 [label="distanciaKm"]
+perth  -> _2 [label=""]
+canberra  -> _2 [label=""]
+_2  -> 3088 [label="distanciaKm"]
+joanSutherland -> CiudadanoNotable [label="inst_de"]
+sidney -> joanSutherland [label="tieneCiudadano"]
+joanSutherland -> soprano [label="oficio"]
+joanSutherland -> 1926 [label="anoNacimiento"]
+joanSutherland -> 2010 [label="anoFallecimiento"]
+
+
+}

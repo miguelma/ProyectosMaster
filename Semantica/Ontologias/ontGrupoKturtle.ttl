@@ -1,0 +1,211 @@
+@prefix : <http://www.semanticweb.org/miria/ontologies/2024/2/untitled-ontology-4/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/miria/ontologies/2024/2/untitled-ontology-4/> .
+
+<http://www.semanticweb.org/miria/ontologies/2024/2/untitled-ontology-4> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/miria/ontologies/2024/2/untitled-ontology-4#beligeranteEn
+:beligeranteEn rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               rdf:type owl:AsymmetricProperty ,
+                        owl:IrreflexiveProperty ;
+               rdfs:domain :Pais ;
+               rdfs:range :Evento_Belico .
+
+
+###  http://www.w3.org/2002/07/owl#topObjectProperty
+owl:topObjectProperty rdf:type owl:FunctionalProperty ;
+                      rdfs:domain :Evento .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/miria/ontologies/2024/2/untitled-ontology-4#descubiertoPor
+:descubiertoPor rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:domain :Descubrimiento ;
+                rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/miria/ontologies/2024/2/untitled-ontology-4#ocurrioEn
+:ocurrioEn rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:domain :Evento ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/miria/ontologies/2024/2/untitled-ontology-4#tieneFecha
+:tieneFecha rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain :Evento ;
+            rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/miria/ontologies/2024/2/untitled-ontology-4#Descubrimiento
+:Descubrimiento rdf:type owl:Class ;
+                rdfs:subClassOf :Evento .
+
+
+###  http://www.semanticweb.org/miria/ontologies/2024/2/untitled-ontology-4#Evento
+:Evento rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/miria/ontologies/2024/2/untitled-ontology-4#Evento_Belico
+:Evento_Belico rdf:type owl:Class ;
+               rdfs:subClassOf :Evento .
+
+
+###  http://www.semanticweb.org/miria/ontologies/2024/2/untitled-ontology-4#Pais
+:Pais rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/miria/ontologies/2024/2/untitled-ontology-4#Revolucion
+:Revolucion rdf:type owl:Class ;
+            rdfs:subClassOf :Evento .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/miria/ontologies/2024/2/untitled-ontology-4#Alemania
+:Alemania rdf:type owl:NamedIndividual ,
+                   :Pais ;
+          :beligeranteEn :WW1 ,
+                         :WW2 .
+
+
+###  http://www.semanticweb.org/miria/ontologies/2024/2/untitled-ontology-4#America
+:America rdf:type owl:NamedIndividual ,
+                  :Descubrimiento ;
+         :descubiertoPor "CristobalColon" ;
+         :ocurrioEn "America" ;
+         :tieneFecha "1492" .
+
+
+###  http://www.semanticweb.org/miria/ontologies/2024/2/untitled-ontology-4#Bolivia
+:Bolivia rdf:type owl:NamedIndividual ,
+                  :Pais ;
+         :beligeranteEn :GuerraPacifico .
+
+
+###  http://www.semanticweb.org/miria/ontologies/2024/2/untitled-ontology-4#Chile
+:Chile rdf:type owl:NamedIndividual ,
+                :Pais ;
+       :beligeranteEn :GuerraPacifico .
+
+
+###  http://www.semanticweb.org/miria/ontologies/2024/2/untitled-ontology-4#España
+:España rdf:type owl:NamedIndividual ,
+                 :Pais ;
+        :beligeranteEn :GuerraCivilEsp .
+
+
+###  http://www.semanticweb.org/miria/ontologies/2024/2/untitled-ontology-4#Francia
+:Francia rdf:type owl:NamedIndividual ,
+                  :Pais ;
+         :beligeranteEn :WW1 ,
+                        :WW2 .
+
+
+###  http://www.semanticweb.org/miria/ontologies/2024/2/untitled-ontology-4#GranBretaña
+:GranBretaña rdf:type owl:NamedIndividual ,
+                      :Pais ;
+             :beligeranteEn :WW1 ,
+                            :WW2 .
+
+
+###  http://www.semanticweb.org/miria/ontologies/2024/2/untitled-ontology-4#GuerraCivilEsp
+:GuerraCivilEsp rdf:type owl:NamedIndividual ,
+                         :Evento_Belico ;
+                :ocurrioEn "España" ;
+                :tieneFecha "1936-1939" .
+
+
+###  http://www.semanticweb.org/miria/ontologies/2024/2/untitled-ontology-4#GuerraPacifico
+:GuerraPacifico rdf:type owl:NamedIndividual ,
+                         :Evento_Belico ;
+                :ocurrioEn "AmericaDelSur" ;
+                :tieneFecha "1879-1884" .
+
+
+###  http://www.semanticweb.org/miria/ontologies/2024/2/untitled-ontology-4#Italia
+:Italia rdf:type owl:NamedIndividual ,
+                 :Pais ;
+        :beligeranteEn :WW1 ,
+                       :WW2 .
+
+
+###  http://www.semanticweb.org/miria/ontologies/2024/2/untitled-ontology-4#Penicilina
+:Penicilina rdf:type owl:NamedIndividual ,
+                     :Descubrimiento ;
+            :descubiertoPor "AlexanderFleming" ;
+            :ocurrioEn "GranBretaña" ;
+            :tieneFecha "1928" .
+
+
+###  http://www.semanticweb.org/miria/ontologies/2024/2/untitled-ontology-4#Peru
+:Peru rdf:type owl:NamedIndividual ,
+               :Pais ;
+      :beligeranteEn :GuerraPacifico .
+
+
+###  http://www.semanticweb.org/miria/ontologies/2024/2/untitled-ontology-4#Polonio
+:Polonio rdf:type owl:NamedIndividual ,
+                  :Descubrimiento ;
+         :descubiertoPor "MarieCurie" ;
+         :ocurrioEn "Francia" ;
+         :tieneFecha 1898 .
+
+
+###  http://www.semanticweb.org/miria/ontologies/2024/2/untitled-ontology-4#RelatividadEspecial
+:RelatividadEspecial rdf:type owl:NamedIndividual ,
+                              :Descubrimiento ;
+                     :descubiertoPor "AlbertEinstein" ;
+                     :ocurrioEn "Suiza" ;
+                     :tieneFecha "1905" .
+
+
+###  http://www.semanticweb.org/miria/ontologies/2024/2/untitled-ontology-4#RevolucionFrancesa
+:RevolucionFrancesa rdf:type owl:NamedIndividual ,
+                             :Revolucion ;
+                    :ocurrioEn "Francia" ;
+                    :tieneFecha "1789" .
+
+
+###  http://www.semanticweb.org/miria/ontologies/2024/2/untitled-ontology-4#RevolucionIndustrial
+:RevolucionIndustrial rdf:type owl:NamedIndividual ,
+                               :Revolucion ;
+                      :ocurrioEn "GranBretaña" ;
+                      :tieneFecha "1760-1840" .
+
+
+###  http://www.semanticweb.org/miria/ontologies/2024/2/untitled-ontology-4#WW1
+:WW1 rdf:type owl:NamedIndividual ,
+              :Evento_Belico ;
+     :ocurrioEn "Europa" ;
+     :tieneFecha "1914-1918" .
+
+
+###  http://www.semanticweb.org/miria/ontologies/2024/2/untitled-ontology-4#WW2
+:WW2 rdf:type owl:NamedIndividual ,
+              :Evento_Belico ;
+     :ocurrioEn "Europa" ;
+     :tieneFecha "1939-1945" .
+
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi

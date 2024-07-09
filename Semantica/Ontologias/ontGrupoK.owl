@@ -1,0 +1,426 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/miria/ontologies/2024/2/untitled-ontology-4"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/miria/ontologies/2024/2/untitled-ontology-4">
+    <Prefix name="" IRI="http://www.semanticweb.org/miria/ontologies/2024/2/untitled-ontology-4/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Descubrimiento"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Evento"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Evento_Belico"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pais"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Revolucion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#beligeranteEn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#descubiertoPor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ocurrioEn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneFecha"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alemania"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#America"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bolivia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chile"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#España"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Francia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GranBretaña"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GuerraCivilEsp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GuerraPacifico"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Italia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Penicilina"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Peru"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Polonio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RelatividadEspecial"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RevolucionFrancesa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RevolucionIndustrial"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WW1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WW2"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Descubrimiento"/>
+        <Class IRI="#Evento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Evento_Belico"/>
+        <Class IRI="#Evento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Revolucion"/>
+        <Class IRI="#Evento"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Pais"/>
+        <NamedIndividual IRI="#Alemania"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Descubrimiento"/>
+        <NamedIndividual IRI="#America"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pais"/>
+        <NamedIndividual IRI="#Bolivia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pais"/>
+        <NamedIndividual IRI="#Chile"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pais"/>
+        <NamedIndividual IRI="#España"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pais"/>
+        <NamedIndividual IRI="#Francia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pais"/>
+        <NamedIndividual IRI="#GranBretaña"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Evento_Belico"/>
+        <NamedIndividual IRI="#GuerraCivilEsp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Evento_Belico"/>
+        <NamedIndividual IRI="#GuerraPacifico"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pais"/>
+        <NamedIndividual IRI="#Italia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Descubrimiento"/>
+        <NamedIndividual IRI="#Penicilina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pais"/>
+        <NamedIndividual IRI="#Peru"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Descubrimiento"/>
+        <NamedIndividual IRI="#Polonio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Descubrimiento"/>
+        <NamedIndividual IRI="#RelatividadEspecial"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Revolucion"/>
+        <NamedIndividual IRI="#RevolucionFrancesa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Revolucion"/>
+        <NamedIndividual IRI="#RevolucionIndustrial"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Evento_Belico"/>
+        <NamedIndividual IRI="#WW1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Evento_Belico"/>
+        <NamedIndividual IRI="#WW2"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#beligeranteEn"/>
+        <NamedIndividual IRI="#Alemania"/>
+        <NamedIndividual IRI="#WW1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#beligeranteEn"/>
+        <NamedIndividual IRI="#Alemania"/>
+        <NamedIndividual IRI="#WW2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#beligeranteEn"/>
+        <NamedIndividual IRI="#Bolivia"/>
+        <NamedIndividual IRI="#GuerraPacifico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#beligeranteEn"/>
+        <NamedIndividual IRI="#Chile"/>
+        <NamedIndividual IRI="#GuerraPacifico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#beligeranteEn"/>
+        <NamedIndividual IRI="#España"/>
+        <NamedIndividual IRI="#GuerraCivilEsp"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#beligeranteEn"/>
+        <NamedIndividual IRI="#Francia"/>
+        <NamedIndividual IRI="#WW1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#beligeranteEn"/>
+        <NamedIndividual IRI="#Francia"/>
+        <NamedIndividual IRI="#WW2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#beligeranteEn"/>
+        <NamedIndividual IRI="#GranBretaña"/>
+        <NamedIndividual IRI="#WW1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#beligeranteEn"/>
+        <NamedIndividual IRI="#GranBretaña"/>
+        <NamedIndividual IRI="#WW2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#beligeranteEn"/>
+        <NamedIndividual IRI="#Italia"/>
+        <NamedIndividual IRI="#WW1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#beligeranteEn"/>
+        <NamedIndividual IRI="#Italia"/>
+        <NamedIndividual IRI="#WW2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#beligeranteEn"/>
+        <NamedIndividual IRI="#Peru"/>
+        <NamedIndividual IRI="#GuerraPacifico"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descubiertoPor"/>
+        <NamedIndividual IRI="#America"/>
+        <Literal>CristobalColon</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ocurrioEn"/>
+        <NamedIndividual IRI="#America"/>
+        <Literal>America</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneFecha"/>
+        <NamedIndividual IRI="#America"/>
+        <Literal>1492</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ocurrioEn"/>
+        <NamedIndividual IRI="#GuerraCivilEsp"/>
+        <Literal>España</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneFecha"/>
+        <NamedIndividual IRI="#GuerraCivilEsp"/>
+        <Literal>1936-1939</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ocurrioEn"/>
+        <NamedIndividual IRI="#GuerraPacifico"/>
+        <Literal>AmericaDelSur</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneFecha"/>
+        <NamedIndividual IRI="#GuerraPacifico"/>
+        <Literal>1879-1884</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descubiertoPor"/>
+        <NamedIndividual IRI="#Penicilina"/>
+        <Literal>AlexanderFleming</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ocurrioEn"/>
+        <NamedIndividual IRI="#Penicilina"/>
+        <Literal>GranBretaña</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneFecha"/>
+        <NamedIndividual IRI="#Penicilina"/>
+        <Literal>1928</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descubiertoPor"/>
+        <NamedIndividual IRI="#Polonio"/>
+        <Literal>MarieCurie</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ocurrioEn"/>
+        <NamedIndividual IRI="#Polonio"/>
+        <Literal>Francia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneFecha"/>
+        <NamedIndividual IRI="#Polonio"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1898</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descubiertoPor"/>
+        <NamedIndividual IRI="#RelatividadEspecial"/>
+        <Literal>AlbertEinstein</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ocurrioEn"/>
+        <NamedIndividual IRI="#RelatividadEspecial"/>
+        <Literal>Suiza</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneFecha"/>
+        <NamedIndividual IRI="#RelatividadEspecial"/>
+        <Literal>1905</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ocurrioEn"/>
+        <NamedIndividual IRI="#RevolucionFrancesa"/>
+        <Literal>Francia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneFecha"/>
+        <NamedIndividual IRI="#RevolucionFrancesa"/>
+        <Literal>1789</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ocurrioEn"/>
+        <NamedIndividual IRI="#RevolucionIndustrial"/>
+        <Literal>GranBretaña</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneFecha"/>
+        <NamedIndividual IRI="#RevolucionIndustrial"/>
+        <Literal>1760-1840</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ocurrioEn"/>
+        <NamedIndividual IRI="#WW1"/>
+        <Literal>Europa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneFecha"/>
+        <NamedIndividual IRI="#WW1"/>
+        <Literal>1914-1918</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ocurrioEn"/>
+        <NamedIndividual IRI="#WW2"/>
+        <Literal>Europa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneFecha"/>
+        <NamedIndividual IRI="#WW2"/>
+        <Literal>1939-1945</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#beligeranteEn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </FunctionalObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#beligeranteEn"/>
+    </AsymmetricObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#beligeranteEn"/>
+    </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#beligeranteEn"/>
+        <Class IRI="#Pais"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <Class IRI="#Evento"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#beligeranteEn"/>
+        <Class IRI="#Evento_Belico"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#descubiertoPor"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ocurrioEn"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#tieneFecha"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#descubiertoPor"/>
+        <Class IRI="#Descubrimiento"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ocurrioEn"/>
+        <Class IRI="#Evento"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneFecha"/>
+        <Class IRI="#Evento"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#descubiertoPor"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ocurrioEn"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneFecha"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
